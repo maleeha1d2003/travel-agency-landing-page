@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderly Travel helps you discover memorable destinations, curated stays, and flexible travel experiences.">
+  <title>Wanderly Travel | Explore Beyond</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Wanderly Travel home">Wanderly</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#features">Why Wanderly</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Travel differently</p>
+        <h1>Explore beyond the ordinary.</h1>
+        <p class="hero-text">Handpicked journeys, inspiring destinations, and thoughtful travel planning made for curious explorers.</p>
+        <a class="button" href="#destinations">Discover your next trip</a>
+      </div>
+    </section>
+
+    <section class="section container" id="destinations">
+      <div class="section-heading">
+        <p class="eyebrow">Go somewhere memorable</p>
+        <h2>Journeys worth taking</h2>
+        <p>From peaceful coastlines to vibrant cities, find an experience that fits your way of travelling.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card">
+          <div class="destination-icon" aria-hidden="true">01</div>
+          <h3>Coastal Escapes</h3>
+          <p>Slow down beside clear water, scenic beaches, and relaxed seaside towns.</p>
+        </article>
+        <article class="destination-card">
+          <div class="destination-icon" aria-hidden="true">02</div>
+          <h3>Mountain Trails</h3>
+          <p>Trade busy streets for fresh air, dramatic views, and unforgettable hikes.</p>
+        </article>
+        <article class="destination-card">
+          <div class="destination-icon" aria-hidden="true">03</div>
+          <h3>City Discoveries</h3>
+          <p>Experience local food, culture, architecture, and the energy of new cities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section" id="features">
+      <div class="container feature-layout">
+        <div>
+          <p class="eyebrow">Why choose us</p>
+          <h2>Less planning. More living.</h2>
+          <p class="feature-intro">We keep the journey simple so you can spend more time enjoying where you are going.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature">
+            <span class="feature-number">01</span>
+            <div><h3>Curated experiences</h3><p>Travel ideas selected around memorable places and authentic experiences.</p></div>
+          </article>
+          <article class="feature">
+            <span class="feature-number">02</span>
+            <div><h3>Flexible planning</h3><p>Build an itinerary around your pace, interests, and available time.</p></div>
+          </article>
+          <article class="feature">
+            <span class="feature-number">03</span>
+            <div><h3>Human support</h3><p>Get practical guidance before and during your trip whenever you need it.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container cta">
+        <div>
+          <p class="eyebrow">Your next chapter</p>
+          <h2>Ready to go?</h2>
+          <p>Tell us where you want to wander and we will help shape the journey.</p>
+        </div>
+        <a class="button button-light" href="mailto:hello@wanderly.example">Plan a trip</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <a class="logo footer-logo" href="#home">Wanderly</a>
+        <p>Thoughtful travel for curious people.</p>
+      </div>
+      <p>© 2026 Wanderly Travel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('#nav-links');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        links.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
