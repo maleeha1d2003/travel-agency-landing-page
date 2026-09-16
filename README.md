@@ -26,3 +26,23 @@ Open `index.html` directly in a browser, or use VS Code Live Server.
 - HTML5
 - CSS3
 - Small vanilla JavaScript snippet for the mobile menu
+
+## Responsive Testing
+
+The landing page was tested at the required viewport sizes:
+
+- 375px — Mobile
+- 1440px — Desktop
+
+The layout adapts to both screen sizes without horizontal scrolling.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Responsive Web Design
+- Git & GitHub
+
+## Author
+
+Developed as part of the EZITECH Front-End Development Internship.
