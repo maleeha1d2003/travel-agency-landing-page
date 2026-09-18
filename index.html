@@ -3,114 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wanderly Travel helps you discover memorable destinations, curated stays, and flexible travel experiences.">
-  <title>Wanderly Travel | Explore Beyond</title>
+
+  <meta
+    name="description"
+    content="WanderLite Travel helps you discover memorable destinations, curated stays, and flexible travel experiences."
+  >
+
+  <title>WanderLite Travel | Explore Beyond</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="site-header">
-   <nav class="nav container" aria-label="Main navigation">
-  <a class="logo" href="#home" aria-label="Wanderly Travel home">Wanderly</a>
+    <nav class="nav container" aria-label="Main navigation">
 
-  <details class="mobile-menu">
-    <summary>Menu</summary>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#features">Why Wanderly</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </details>
+      <a class="logo" href="#home" aria-label="WanderLite Travel home">
+        WanderLite
+      </a>
 
-  <ul class="desktop-nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#destinations">Destinations</a></li>
-    <li><a href="#features">Why Wanderly</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+      <!-- Mobile navigation -->
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#features">Why WanderLite</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+
+      <!-- Desktop navigation -->
+      <ul class="desktop-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#features">Why WanderLite</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-overlay"></div>
+
+  <!-- Hero Section -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <!-- Meaningful alt text satisfies the image requirement -->
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=85"
+        alt="Scenic mountain landscape representing travel and exploration"
+      >
+
       <div class="hero-content container">
-        <p class="eyebrow">Travel differently</p>
+
+        <p class="eyebrow">WanderLite Travel Agency</p>
+
         <h1>Explore beyond the ordinary.</h1>
-        <p class="hero-text">Handpicked journeys, inspiring destinations, and thoughtful travel planning made for curious explorers.</p>
-        <a class="button" href="#destinations">Discover your next trip</a>
+
+        <p class="hero-text">
+          Discover memorable destinations, curated stays, and flexible
+          travel experiences designed around you.
+        </p>
+
+        <a class="button" href="#destinations">
+          Explore destinations
+        </a>
+
       </div>
+
     </section>
 
-    <section class="section container" id="destinations">
-      <div class="section-heading">
-        <p class="eyebrow">Go somewhere memorable</p>
-        <h2>Journeys worth taking</h2>
-        <p>From peaceful coastlines to vibrant cities, find an experience that fits your way of travelling.</p>
+
+    <!-- Destinations Section -->
+    <section class="section" id="destinations">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Destinations</p>
+
+          <h2>Journeys worth taking</h2>
+
+          <p>
+            From peaceful escapes to unforgettable adventures, discover
+            destinations that make every trip memorable.
+          </p>
+
+        </div>
+
+
+        <div class="destination-grid">
+
+          <article class="destination-card">
+
+            <span class="destination-icon">01</span>
+
+            <h3>Mountain Escapes</h3>
+
+            <p>
+              Breathe fresh air, explore scenic trails, and enjoy peaceful
+              mountain landscapes.
+            </p>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <span class="destination-icon">02</span>
+
+            <h3>Coastal Getaways</h3>
+
+            <p>
+              Relax by the water and experience beautiful coastlines,
+              sunsets, and refreshing escapes.
+            </p>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <span class="destination-icon">03</span>
+
+            <h3>City Adventures</h3>
+
+            <p>
+              Discover vibrant streets, local culture, exciting food,
+              and unforgettable city experiences.
+            </p>
+
+          </article>
+
+        </div>
+
       </div>
-      <div class="destination-grid">
-        <article class="destination-card">
-          <div class="destination-icon" aria-hidden="true">01</div>
-          <h3>Coastal Escapes</h3>
-          <p>Slow down beside clear water, scenic beaches, and relaxed seaside towns.</p>
-        </article>
-        <article class="destination-card">
-          <div class="destination-icon" aria-hidden="true">02</div>
-          <h3>Mountain Trails</h3>
-          <p>Trade busy streets for fresh air, dramatic views, and unforgettable hikes.</p>
-        </article>
-        <article class="destination-card">
-          <div class="destination-icon" aria-hidden="true">03</div>
-          <h3>City Discoveries</h3>
-          <p>Experience local food, culture, architecture, and the energy of new cities.</p>
-        </article>
-      </div>
+
     </section>
 
+
+    <!-- Features Section -->
     <section class="feature-section" id="features">
+
       <div class="container feature-layout">
-        <div>
-          <p class="eyebrow">Why choose us</p>
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Why WanderLite</p>
+
           <h2>Less planning. More living.</h2>
-          <p class="feature-intro">We keep the journey simple so you can spend more time enjoying where you are going.</p>
+
+          <p class="feature-intro">
+            We make travel simpler so you can spend more time enjoying
+            the journey and less time worrying about the details.
+          </p>
+
         </div>
+
+
         <div class="feature-list">
+
           <article class="feature">
+
             <span class="feature-number">01</span>
-            <div><h3>Curated experiences</h3><p>Travel ideas selected around memorable places and authentic experiences.</p></div>
+
+            <div>
+              <h3>Curated experiences</h3>
+
+              <p>
+                Carefully selected destinations and experiences to help
+                you make the most of your trip.
+              </p>
+            </div>
+
           </article>
+
+
           <article class="feature">
+
             <span class="feature-number">02</span>
-            <div><h3>Flexible planning</h3><p>Build an itinerary around your pace, interests, and available time.</p></div>
+
+            <div>
+              <h3>Flexible planning</h3>
+
+              <p>
+                Travel options designed around your schedule, preferences,
+                and personal travel style.
+              </p>
+            </div>
+
           </article>
+
+
           <article class="feature">
+
             <span class="feature-number">03</span>
-            <div><h3>Human support</h3><p>Get practical guidance before and during your trip whenever you need it.</p></div>
+
+            <div>
+              <h3>Travel with confidence</h3>
+
+              <p>
+                Get helpful guidance throughout your planning process
+                so your journey feels simple and stress-free.
+              </p>
+            </div>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- CTA Section -->
     <section class="cta-section" id="contact">
+
       <div class="container cta">
+
         <div>
-          <p class="eyebrow">Your next chapter</p>
+
+          <p class="eyebrow">Start exploring</p>
+
           <h2>Ready to go?</h2>
-          <p>Tell us where you want to wander and we will help shape the journey.</p>
+
+          <p>
+            Your next memorable journey is waiting.
+          </p>
+
         </div>
-        <a class="button button-light" href="mailto:hello@wanderly.example">Plan a trip</a>
+
+        <a class="button button-light" href="mailto:hello@wanderlite.example">
+          Contact us
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- Footer -->
   <footer class="site-footer">
+
     <div class="container footer-content">
-      <div>
-        <a class="logo footer-logo" href="#home">Wanderly</a>
-        <p>Thoughtful travel for curious people.</p>
-      </div>
-      <p>© 2026 Wanderly Travel. All rights reserved.</p>
+
+      <p class="footer-logo">
+        <strong>WanderLite Travel</strong>
+      </p>
+
+      <p>
+        © 2026 WanderLite Travel. Explore beyond the ordinary.
+      </p>
+
     </div>
+
   </footer>
+
 </body>
 </html>
